@@ -173,7 +173,23 @@
                         </p>
                     </div>                
                     <ul class="timeline"> 
-                        <li class="timeline-question" id="q1"> 
+                        <li class="timeline-question" > 
+                            <div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-lips"></i></div> 
+                            <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s"> 
+                                <div class="timeline-heading"> 
+                                    <h4 class="timeline-title">Our First Meet</h4>
+                                </div> 
+                                <div class="timeline-body"> 
+                                    <p>
+                                        It wasn't that long, and it certainly wasn't the kind of kiss you see in movies these days, but it was wonderful in its own way, and all I can remember about the moment is that when our lips touched, I knew the memory would last forever.
+                                        Question: Minh quen nhau nam nao
+                                    </p>
+                                    <input type="text" id="q1" placeholder="Ex:2015"> 
+                                    <a onclick="validateQuestion(1)">Submit</a>
+                                </div> 
+                            </div> 
+                        </li>
+                        <li class="timeline-inverted negative100" style="display:none" id="li_tl1"> 
                             <div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-lips"></i></div> 
                             <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s"> 
                                 <div class="timeline-heading"> 
@@ -182,44 +198,52 @@
                                 <div class="timeline-body"> 
                                     <p>
                                         It wasn't that long, and it certainly wasn't the kind of kiss you see in movies these days, but it was wonderful in its own way, and all I can remember about the moment is that when our lips touched, I knew the memory would last forever.
+                                        Question: Ngay first kiss la ngay nao
                                     </p>
-                                    <button type="button" onclick="$('#q2').show()">Click Me!</button>
+                                    <input type="text" id="q2" placeholder="Ex:26/03/2015"> 
+                                    <a onclick="validateQuestion(2)">Submit</a>
                                 </div> 
                             </div> 
                         </li>
                          
-                        <li class="timeline-inverted negative100" style="display:none" id="q2"> 
+                        <li class=class="negative75" style="display:none" id="li_tl2"> 
                             <div class="timeline-badge time wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-ring"></i></div> 
                             <div class="timeline-panel wow fadeInRight" data-wow-delay="0.7s"> 
                                 <div class="timeline-heading"> 
-                                    <h4 class="timeline-title">Got Engaged</h4>
+                                    <h4 class="timeline-title">Date again</h4>
                                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 20 Dec 2010 - By Eve</small></p> 
                                 </div> 
                                 <div class="timeline-body"> 
                                     <p>
                                         Her boyfriend gives her a Mercedes, [her friends] say, 'Oh, that's nice.' But her boyfriend gives her a diamond, they say, 'Oh, he's serious.' It's not just the gift of love-it's the gift of commitment. She's not jumping up and down because she got a diamond ring but because she got a guy!
-                                    </p>                                      
+                                        Question: Ngay len fortess la ngay nao
+                                    </p>      
+                                    <input type="text" id="q3" placeholder="Ex:26/03/2015"> 
+                                    <a onclick="validateQuestion(3)">Submit</a>                                
                                 </div> 
                             </div> 
                         </li>
                         
-                        <li class="negative75" style="display:none"> 
+                        <li class="timeline-inverted negative50" style="display:none" id="li_tl3"> 
                             <div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-married"></i></div> 
                             <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s"> 
                                 <div class="timeline-heading"> 
-                                    <h4 class="timeline-title">Got Married</h4>
+                                    <h4 class="timeline-title">Official</h4>
                                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 24 May 2011 - By Adam</small></p> 
                                 </div> 
                                 <div class="timeline-body"> 
                                     <p>
                                         Marriage has made me a lot happier and I'm deeply in love with my wife, and I thank God for her every day.
+                                        Question: Ngay len chinh thuc la ngay nao
                                     </p>
+                                    <input type="text" id="q4" placeholder="Ex:26/03/2015"> 
+                                    <a onclick="validateQuestion(4)">Submit</a>  
                                 </div> 
                             </div> 
                         </li>
                         
-                        <li class="timeline-inverted negative50" style="display:none"> 
-                            <div class="timeline-badge time wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-pregnancy"></i></div> 
+                        <li class="negative75" style="display:none" id="li_tl4"> 
+                            <div class="timeline-badge time wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-married"></i></div> 
                             <div class="timeline-panel wow fadeInRight" data-wow-delay="0.7s"> 
                                 <div class="timeline-heading"> 
                                     <h4 class="timeline-title">I'm Pregnant</h4>
@@ -228,22 +252,10 @@
                                 <div class="timeline-body"> 
                                     <p>
                                         Of course I can do this. I'm pregnant, not brain-damaged. My condition doesn't change my personality.
-                                    </p>                                      
-                                </div> 
-                            </div> 
-                        </li>
-                        
-                        <li class="negative75" style="display:none"> 
-                            <div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="icon icolove-babyboy"></i></div> 
-                            <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s"> 
-                                <div class="timeline-heading"> 
-                                    <h4 class="timeline-title">Welcome Michael!</h4>
-                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1 Oct 2012 - By Adam</small></p> 
-                                </div> 
-                                <div class="timeline-body"> 
-                                    <p>
-                                        Welcome Our new little family member, he is so cute and we still afraid to hurt him as we really don't have experience with newborn, excuse us Michael!
-                                    </p>
+                                        Question: Bao nam nua cuoi
+                                    </p>  
+                                    <input type="text" id="q5" placeholder="Ex:9"> 
+                                    <a onclick="validateQuestion(5)">Submit</a>                                      
                                 </div> 
                             </div> 
                         </li>
@@ -255,8 +267,8 @@
     </section>
 
     <!--Family Section-->
-    <section id="family" class="white">
-        <div class="container">    
+    <section id="family" class="white" >
+        <div class="container" id="li_tl5">    
             <div class="row">     
                 <!--Our Family-->           
                 <div class="col-md-12">
@@ -914,62 +926,8 @@
         <div class="separator"></div>
     </section>     
     
-    <!--Contact Section-->
-    <section id="contactus" class="white contact">
-        <!--Contact Form-->
-        <div class="container">
-            <div class="row">
-            <div class="col-md-12">
-                <div class="heading">
-                    <h2 class="wow fadeInUp underline padtop50" data-wow-delay="0.5s">Get in Touch</h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.5s">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                </div>
-
-                <div id="ContactFormDiv"></div>
-
-                <form class="form-horizontal" method="post" action="ajax/sendemail.php" name="ContactForm" id="contact">
-                    <div class="col-md-4">
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
-                    </div>
-
-                    <div class="col-md-4">
-                      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-                    </div>
-
-                    <div class="col-md-4">
-                      <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
-                    </div>
-                  
-                    <div class="col-md-12">
-                      <textarea name="comments" class="form-control" rows="10"></textarea>
-                    </div>
-                    
-                    <div class="col-md-12 btn-normal">
-                        <a href="" id="submit"><span>Submit</span></a>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-        </div>
-    </section>        
-
     <!--Footer Section-->
     <section class="footer">    
-        <!--Footer One-->
-        <div class="container-fluid color pattern">
-            <div class="container">
-                <div class="row">           
-                    <div class="col-md-12 footer1">
-                        <div class="wow fadeInUp" data-wow-delay="0.5s">
-                            <p class="text-center"><span class="fa fa-twitter fa-5x"></span></p>
-                            <div class="footer-tweet">
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>        
         <!--Footer Two-->
         <div class="container-fluid dark footer2">
             <div class="container">
@@ -1037,7 +995,33 @@
     <script src="{{url('js/countup.js')}}"></script>
     <script src="{{url('js/modernizr.hover.js')}}"></script>
     <script>
-        
+        function validateQuestion(id)
+        {
+            var question_id = '#q'+id;
+            var ans = $(question_id).val();
+            switch(id){
+                case 1:
+                    if (ans == '2005') $('#li_tl'+id).show();
+                    else $(question_id).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    break;
+                case 2:
+                    if (ans == '20/02/2010') $('#li_tl'+id).show();
+                    else $(question_id).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    break;
+                case 3:
+                    if (ans == '02/04/2015') $('#li_tl'+id).show();
+                    else $(question_id).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    break;
+                case 4:
+                    if (ans == '29/04/2015') $('#li_tl'+id).show();
+                    else $(question_id).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    break;
+                case 5:
+                    if (ans == '3') $('#li_tl'+id).show();
+                    else $(question_id).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    break;
+            }
+        }
     </script>
   </body>
 </html>
